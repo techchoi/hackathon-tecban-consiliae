@@ -15,12 +15,10 @@ import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.util.ResourceUtils;
 import org.springframework.web.client.RestTemplate;
 
-@Configuration
 public class RestClientCertTestConfiguration {
 
     private char[] allPassword = "allpassword".toCharArray();
 
-    @Bean
     public RestTemplate restTemplate(RestTemplateBuilder builder) throws Exception {
 
         SSLContext sslContext = SSLContextBuilder

@@ -12,6 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import com.hackathon.tecban.consiliae.controller.Empresa;
 import com.hackathon.tecban.consiliae.dtos.Data;
 
 @Service
@@ -41,6 +42,17 @@ public class TransacoesServices {
 		  
 		    return result.getBody();
 
+	}
+	
+	
+	
+	public RetornaConsiliacao retornaConciliacao () {
+		return retornaConciliacao();
+	}
+	
+	
+	public Empresa cadastraEmpresaa(Empresa empresa) {
+		return empresa;
 	}
 	
 
